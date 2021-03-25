@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+	<display-name>Leave_Management_System</display-name>
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet-mapping>
+		<servlet-name>Employee_SingS</servlet-name>
+		<url-pattern>/employee</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Employee_SingS</servlet-name>
+		<servlet-class>com.app.servlet.Employee_SingS</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>employee_login</servlet-name>
+		<url-pattern>/elogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>employee_login</servlet-name>
+		<servlet-class>com.app.servlet.employee_login</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Admin_Login</servlet-name>
+		<url-pattern>/alogin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Admin_Login</servlet-name>
+		<servlet-class>com.app.servlet.Admin_Login</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Employee_leave</servlet-name>
+		<url-pattern>/leave</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Employee_leave</servlet-name>
+		<servlet-class>com.app.servlet.Employee_leave</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AcceptLeave</servlet-name>
+		<url-pattern>/conform</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AcceptLeave</servlet-name>
+		<servlet-class>com.app.servlet.AcceptLeave</servlet-class>
+	</servlet>
+	
+</web-app>
